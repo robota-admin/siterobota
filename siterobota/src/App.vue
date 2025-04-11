@@ -19,10 +19,9 @@ import QuemSomos from './components/QuemSomos.vue';
 
 <style scoped>
 main {
-  display: grid;
-  grid-template: 100% / 100%;
-  place-items: center;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 </style>

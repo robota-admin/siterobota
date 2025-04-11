@@ -11,9 +11,4 @@
 </template>
 
 <style scoped>
-    div {
-        white-space: nowrap;
-        overflow: hidden;
-        animation: animate 2s linear forwards;
-    }
 </style>
