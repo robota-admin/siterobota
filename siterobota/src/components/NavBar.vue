@@ -35,14 +35,13 @@
         text-decoration: none;
         color: inherit;
     }
-    
-    border-bottom: solid black 1px;
+    border-bottom: solid black 4px;
     #main-container {
-        
+        margin-left: 256px;
+        margin-right: 256px;
         display: flex;
-
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
         
         #nav-logo {
             display: flex;
@@ -79,12 +78,10 @@
             grid-template-rows: 23px 23px;
             align-self: center;
             margin-left: 24px;
-
-
-            img {
-                width: 24px;
-                height: 24px;
-            }
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
             }
         }
     }

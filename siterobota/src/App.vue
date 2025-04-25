@@ -21,7 +21,6 @@ import QuemSomos from './components/QuemSomos.vue';
 main {
   display: flex;
   flex-direction: column;
-  gap: 48px;
 }
 
 </style>
