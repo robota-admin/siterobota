@@ -6,7 +6,7 @@
         <h2>QUEM SOMOS</h2>
         <div id="descricao">
         <p>
-            
+
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Vestibulum nec velit id velit efficitur ullamcorper. 
     Quisque imperdiet gravida tempus. Duis lacinia quis justo eget porttitor. 
@@ -33,7 +33,7 @@
 
 <style scoped>
     #main-container {
-        
+        background-color: #C4CAD0;
         margin-left: 256px;
         margin-right: 256px;
         h2 {
@@ -44,7 +44,7 @@
     #descricao {
         display:flex;
         p {
-            font-size: 12px;
+            font-size: 16px;
             text-wrap: n;
         }
     }

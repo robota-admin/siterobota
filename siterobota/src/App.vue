@@ -2,6 +2,9 @@
 import Banner from './components/Banner.vue';
 import NavBar from './components/NavBar.vue'
 import QuemSomos from './components/QuemSomos.vue';
+import Equipes from './components/Equipes.vue';
+import Servicos from './components/Servicos.vue';
+import Patrocinadores from './components/Patrocinadores.vue';
 </script>
 
 
@@ -14,6 +17,9 @@ import QuemSomos from './components/QuemSomos.vue';
     <NavBar></NavBar>
     <Banner></Banner>
     <QuemSomos></QuemSomos>
+    <Equipes></Equipes>
+    <Servicos></Servicos>
+    <Patrocinadores></Patrocinadores>
   </main>
 </template>
 
