@@ -33,7 +33,10 @@
 
 <style scoped>
     #main-container {
-        background-color: #C4CAD0;
+        @media screen and (max-width: 1200px) {
+            margin-left: 168px;
+            margin-right: 168px;
+        }
         margin-left: 256px;
         margin-right: 256px;
         h2 {

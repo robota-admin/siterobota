@@ -4,7 +4,8 @@ import NavBar from './components/NavBar.vue'
 import QuemSomos from './components/QuemSomos.vue';
 import Equipes from './components/Equipes.vue';
 import Servicos from './components/Servicos.vue';
-import Patrocinadores from './components/Patrocinadores.vue';
+import Contato from './components/Contato.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 
@@ -19,7 +20,8 @@ import Patrocinadores from './components/Patrocinadores.vue';
     <QuemSomos></QuemSomos>
     <Equipes></Equipes>
     <Servicos></Servicos>
-    <Patrocinadores></Patrocinadores>
+    <Contato></Contato>
+    <Footer></Footer>
   </main>
 </template>
 

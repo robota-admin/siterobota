@@ -2,11 +2,11 @@
 </script>
 
 <template>
-    <div id="header">
-        <div id = "main-container">
+    <div id="main-container">
+        <div id = "header">
             <div id="nav-logo">
                 <a href=""><img src="../assets/robota_logo.svg"></a>
-                <h1>Robota</h1>
+                <h1><a href="">Robota</a></h1>
             </div>
             <nav>
                 <div id="nav-elements">
@@ -30,15 +30,24 @@
 </template>
 
 <style scoped>
-#header {
-    a {
+#main-container {
+    @media screen and (max-width: 1200px) {
+            margin-left: 96px;
+            margin-right: 96px;
+        }
+    margin-left: 256px;
+    margin-right: 256px;
+    border-bottom: solid black 4px;
+    #header {
+        a {
         text-decoration: none;
         color: inherit;
-    }
-    border-bottom: solid black 4px;
-    #main-container {
-        margin-left: 256px;
-        margin-right: 256px;
+        }
+        a:hover {
+            background-clip: text;
+            background-image: linear-gradient(to right, purple , orange);
+            color: transparent;
+        }
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -68,7 +77,7 @@
                     
                     font-size: 16px;
                     font-weight: 400;
-                    color:252741;
+                    color:#252741;
                 }
             }
             #nav-redes-sociais {
