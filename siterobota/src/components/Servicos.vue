@@ -53,7 +53,6 @@
         }
         #images {
             margin: 16px;
-            height: 192px;
             width: 384px;
             flex-shrink: 0;
             flex-grow: 1;
