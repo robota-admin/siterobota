@@ -37,7 +37,7 @@
         }
     margin-left: 256px;
     margin-right: 256px;
-    border-bottom: solid black 4px;
+    border-bottom: solid black 1px;
     #header {
         a {
         text-decoration: none;

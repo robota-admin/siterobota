@@ -7,6 +7,7 @@
         <h2>ROBOTA UFSC</h2>
         <p>LTIC - Laboratório de Tecnologia e Comunicação <br>Av. Prof. Henrique da Silva Fontes, 1 - Trindade,<br> Florianópolis - SC, 88036-700</p>
         <h3>Email: robotadasufsc@gmail.com</h3>
+        <h3>Whatsapp: (48) 3721-4609</h3>
         <div id="nav-redes-sociais">
             <a href=""><img src="../assets/icons8-instagram.svg"></a>
             <a href=""><img src="../assets/icons8-facebook.svg"></a>
@@ -15,8 +16,7 @@
         </div>
     </div>
     <div id="localizacao">
-        
-
+        <img src="../assets/mapstest.png">
     </div>
     <div id="patrocinadores">
         <h3>Patrocinadores</h3>
@@ -70,6 +70,11 @@
             width: 384px;
             height: 256px;
             flex: 1 0 256px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         #patrocinadores {
         
@@ -81,7 +86,6 @@
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
                 img {
-                    color:red;
                     width: 64px;
                     height: 64px;
                 }

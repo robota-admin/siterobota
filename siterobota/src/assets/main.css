@@ -1,2 +1,12 @@
 @import './base.css';
-
+:root {
+    --main-purple: #663399;
+    --main-yellow:#FFCC66 ;
+    --main-orange: #FF9933 ;
+    --secondary-dark-purple: #2F124C;
+    --secondary-dark-yellow: #FDC042;
+    --secondary-dark-orange: #F48514;
+    --secondary-light-purple: #994DE6;
+    --secondary-light-yellow: #FFD682;
+    --secondary-light-orange: #FFAA55;
+}

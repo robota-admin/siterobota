@@ -8,22 +8,26 @@
             <div class="equipe">
                 <h1>Trekking</h1>
                 <div class="description">
-                    <img>
-                    <p>Robô móvel, que é capaz de realizar um circuito, desconhecido e com obstáculos, de maneira completamente autônoma.</p>
+                    <img src="../assets/trekking.JPG">
+                    <p>Robô móvel adaptado para situações de Off-road e On-road, que é capaz de realizar um circuito desconhecido e com obstáculos de maneira completamente autônoma.
+                        Seu funcionamento combina princípios de mecânica, eletrônica, programação e modelagem 3D.
+                    </p>
                 </div>
             </div>
             <div class="equipe">
                 <h1>Combate</h1>
                 <div class="description">
-                    <img>
-                    <p>o combate é uma categoria bem popular em competições de robótica, os robôs são separados em categorias de peso e organizados em chaves de combates 1 a 1 em que o vencedor passa para a próxima luta</p>
+                    <img src="../assets/combate.JPG">
+                    <p>O combate é a principal categoria em competições de robótica,
+                         os robôs são separados por peso e controlados por infravermelho. 
+                         Seu funcionamento combina princípios de mecânica, eletrônica e modelagem 3D.</p>
                 </div>
             </div>
             <div class="equipe">
                 <h1>Segue-Linha</h1>
                 <div class="description">
-                    <img>
-                    <p>Um seguidor de linha é um robô autônomo projetado para seguir um caminho pré-determinado, geralmente marcado por uma linha no chão, branca ou preta.
+                    <img src="../assets/segue_linha.JPG">
+                    <p>Robô autônomo projetado para seguir um caminho pré-determinado, geralmente marcado por uma linha no chão, branca ou preta.
                         Seu funcionamento combina princípios de mecânica, eletrônica e programação.</p>
                 </div>
             </div>
@@ -44,9 +48,9 @@
         text-align: center;
         #equipes {
             display: flex;
-            justify-content: space-between;
+            gap: 8px;
             .equipe {
-                width: 256px;
+                flex: 1 1 0px;
                 border: 1px solid black;
                 border-radius: 5px;
                 h1 {
@@ -57,6 +61,8 @@
                     border-top: solid 1px black;
                     border-radius: 5px;
                     img {
+                        border: solid black 1px;
+                        border-radius: 10px;
                         width: 192px;
                         height: 192px;
                     }

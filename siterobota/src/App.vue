@@ -27,8 +27,10 @@ import Footer from './components/Footer.vue';
 
 <style scoped>
 main {
+  
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 </style>
