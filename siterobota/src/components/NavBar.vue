@@ -31,7 +31,7 @@ const toggleMenu = () => {
 
                 <div id="nav-redes-sociais">
                     <a href="https://www.instagram.com/robota.ufsc/" class="social-link" title="Instagram" target="_blank" rel="noopener noreferrer">
-                        <img src="../assets/icons8-instagram.svg" alt="Instagram">
+                        <img src="../assets/icon-instagram-svgrepo.svg" alt="Instagram">
                     </a>
                     <a href="#" class="social-link" title="Facebook">
                         <img src="../assets/icons8-facebook.svg" alt="Facebook">
@@ -181,6 +181,7 @@ const toggleMenu = () => {
             height: 20px;
             opacity: 0.7;
             transition: all 0.3s ease;
+            filter: grayscale(1) ;
         }
 
         &:hover {

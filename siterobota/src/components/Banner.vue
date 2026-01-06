@@ -13,10 +13,10 @@
                 </div>
                 <div id="button-containers">
                     <button class="btn-primary">
-                        <span>PARTICIPAR</span>
+                        <span><a href="https://linktr.ee/robotaufsc">PARTICIPAR</a></span>
                     </button>
                     <button class="btn-secondary">
-                        <span>APOIAR</span>
+                        <span><a href="#">APOIAR</a></span>
                     </button>
                 </div>
             </div>
@@ -33,7 +33,7 @@
 #banner {
     height: 70vh;
     min-height: 600px;
-    background: url("src/assets/banner_robota.JPG") no-repeat center center / cover;
+    background: url("public/banner_robota.JPG") no-repeat center center / cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -137,6 +137,9 @@
 
 .btn-primary span,
 .btn-secondary span {
+  a {
+    all:unset;
+  }
     position: relative;
     z-index: 2;
 }
@@ -158,11 +161,11 @@
         height: 65vh;
         min-height: 500px;
     }
-    
+
     .main-title {
         font-size: 3rem;
     }
-    
+
     .subtitle {
         font-size: 1.8rem;
     }
@@ -173,27 +176,27 @@
         height: 60vh;
         min-height: 450px;
     }
-    
+
     #heading-container {
         padding: 0 30px;
     }
-    
+
     .main-title {
         font-size: 2.5rem;
     }
-    
+
     .subtitle {
         font-size: 1.5rem;
     }
-    
+
     .description {
         font-size: 1.1rem;
     }
-    
+
     #button-containers {
         gap: 15px;
     }
-    
+
     .btn-primary,
     .btn-secondary {
         padding: 14px 28px;
@@ -206,31 +209,31 @@
         height: 60vh;
         min-height: 400px;
     }
-    
+
     #heading-container {
         padding: 0 15px;
     }
-    
+
     .main-title {
         font-size: 1.8rem;
         line-height: 1.2;
     }
-    
+
     .subtitle {
         font-size: 1.2rem;
     }
-    
+
     .description {
         font-size: 0.95rem;
         line-height: 1.5;
     }
-    
+
     #button-containers {
         flex-direction: column;
         align-items: center;
         gap: 12px;
     }
-    
+
     .btn-primary,
     .btn-secondary {
         width: 100%;
@@ -245,15 +248,15 @@
         height: 55vh;
         min-height: 350px;
     }
-    
+
     .main-title {
         font-size: 1.6rem;
     }
-    
+
     .subtitle {
         font-size: 1.1rem;
     }
-    
+
     .description {
         font-size: 0.9rem;
     }
