@@ -27,7 +27,7 @@ const updateCurrentSlide = (data) => {
 </script>
 
 <template>
-    <div id="main-container">
+    <div id="main-container-servicos">
         <div class="section-header">
             <h2>SERVIÇOS</h2>
             <div class="accent-line"></div>
@@ -35,7 +35,7 @@ const updateCurrentSlide = (data) => {
                 Oferecemos serviços especializados para graduação e empresas
             </p>
         </div>
-        
+
         <div id="servicos">
             <div class="services-content">
                 <div class="services-list">
@@ -64,13 +64,13 @@ const updateCurrentSlide = (data) => {
                     </div>
                 </div>
             </div>
-            
+
             <div class="gallery-section">
                 <h3>Galeria de Trabalhos</h3>
                 <div id="carrossel">
-                    <Carousel 
+                    <Carousel
                         ref="carouselRef"
-                        :items-to-show="1" 
+                        :items-to-show="1"
                         :wrap-around="true"
                         :autoplay="5000"
                         :pause-autoplay-on-hover="true"
@@ -85,7 +85,6 @@ const updateCurrentSlide = (data) => {
                                         <div class="overlay-content">
                                             <h4>{{ image.title }}</h4>
                                             <p>{{ image.description }}</p>
-                                            <button class="view-details-btn">Ver Detalhes</button>
                                         </div>
                                     </div>
                                 </div>
@@ -97,11 +96,11 @@ const updateCurrentSlide = (data) => {
                             <Pagination />
                         </template>
                     </Carousel>
-                    
+
                     <!-- Thumbnails -->
                     <div class="carousel-thumbnails">
-                        <div 
-                            v-for="(image, index) in images" 
+                        <div
+                            v-for="(image, index) in images"
                             :key="'thumb-' + image.id"
                             class="thumbnail-item"
                             :class="{ active: index === currentSlide }"
@@ -120,7 +119,7 @@ const updateCurrentSlide = (data) => {
 </template>
 
 <style scoped>
-#main-container {
+#main-container-servicos {
     max-width: 1200px;
     margin: 0 auto;
     padding: 80px 20px;
@@ -129,7 +128,7 @@ const updateCurrentSlide = (data) => {
 .section-header {
     text-align: center;
     margin-bottom: 60px;
-    
+
     h2 {
         font-size: 2.5rem;
         font-weight: 700;
@@ -139,7 +138,7 @@ const updateCurrentSlide = (data) => {
         -webkit-text-fill-color: transparent;
         margin-bottom: 20px;
     }
-    
+
     .accent-line {
         width: 80px;
         height: 4px;
@@ -147,7 +146,7 @@ const updateCurrentSlide = (data) => {
         margin: 0 auto 20px;
         border-radius: 2px;
     }
-    
+
     .section-description {
         font-size: 1.1rem;
         color: #666;
@@ -171,7 +170,7 @@ const updateCurrentSlide = (data) => {
         border-radius: 20px;
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
         border: 1px solid rgba(102, 51, 153, 0.1);
-        
+
         h3 {
             font-size: 1.8rem;
             font-weight: 700;
@@ -179,37 +178,37 @@ const updateCurrentSlide = (data) => {
             margin: 0 0 30px 0;
             text-align: center;
         }
-        
+
         .service-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 25px;
-            
+
             .service-item {
                 text-align: center;
                 padding: 25px 15px;
                 border-radius: 15px;
                 transition: all 0.3s ease;
                 border: 1px solid rgba(102, 51, 153, 0.1);
-                
+
                 &:hover {
                     background: linear-gradient(135deg, rgba(102, 51, 153, 0.05), rgba(255, 153, 51, 0.05));
                     transform: translateY(-5px);
                     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
                 }
-                
+
                 .service-icon {
                     font-size: 2.5rem;
                     margin-bottom: 15px;
                 }
-                
+
                 h4 {
                     font-size: 1.2rem;
                     font-weight: 600;
                     color: var(--secondary-dark-purple);
                     margin: 0 0 10px 0;
                 }
-                
+
                 p {
                     font-size: 0.9rem;
                     color: #666;
@@ -229,33 +228,33 @@ const updateCurrentSlide = (data) => {
         margin: 0 0 30px 0;
         text-align: center;
     }
-    
+
     #carrossel {
         background: white;
         border-radius: 20px;
         overflow: hidden;
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
         border: 1px solid rgba(102, 51, 153, 0.1);
-        
+
         .carousel__item {
             width: 100%;
             height: 400px;
             overflow: hidden;
             position: relative;
-            
+
             .image-container {
                 width: 100%;
                 height: 100%;
                 position: relative;
                 overflow: hidden;
-                
+
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     transition: transform 0.3s ease;
                 }
-                
+
                 .image-overlay {
                     position: absolute;
                     top: 0;
@@ -272,26 +271,26 @@ const updateCurrentSlide = (data) => {
                     align-items: flex-end;
                     opacity: 0;
                     transition: opacity 0.3s ease;
-                    
+
                     .overlay-content {
                         padding: 30px;
                         color: white;
                         width: 100%;
                         transform: translateY(20px);
                         transition: transform 0.3s ease;
-                        
+
                         h4 {
                             font-size: 1.5rem;
                             font-weight: 700;
                             margin: 0 0 10px 0;
                         }
-                        
+
                         p {
                             font-size: 1rem;
                             margin: 0 0 20px 0;
                             opacity: 0.9;
                         }
-                        
+
                         .view-details-btn {
                             background: linear-gradient(135deg, var(--main-purple), var(--main-orange));
                             color: white;
@@ -302,7 +301,7 @@ const updateCurrentSlide = (data) => {
                             cursor: pointer;
                             transition: all 0.3s ease;
                             font-size: 0.9rem;
-                            
+
                             &:hover {
                                 transform: translateY(-2px);
                                 box-shadow: 0 8px 20px rgba(102, 51, 153, 0.3);
@@ -310,16 +309,16 @@ const updateCurrentSlide = (data) => {
                         }
                     }
                 }
-                
+
                 &:hover {
                     .image-overlay {
                         opacity: 1;
-                        
+
                         .overlay-content {
                             transform: translateY(0);
                         }
                     }
-                    
+
                     img {
                         transform: scale(1.05);
                     }
@@ -327,7 +326,7 @@ const updateCurrentSlide = (data) => {
             }
         }
     }
-    
+
     .carousel-thumbnails {
         display: flex;
         justify-content: center;
@@ -335,7 +334,7 @@ const updateCurrentSlide = (data) => {
         padding: 20px;
         background: rgba(248, 250, 252, 0.9);
         margin-top: -1px;
-        
+
         .thumbnail-item {
             width: 60px;
             height: 40px;
@@ -345,22 +344,22 @@ const updateCurrentSlide = (data) => {
             transition: all 0.3s ease;
             border: 2px solid transparent;
             position: relative;
-            
+
             &.active {
                 border-color: var(--main-purple);
                 transform: scale(1.1);
             }
-            
+
             &:hover {
                 transform: scale(1.05);
             }
-            
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
-            
+
             .thumbnail-overlay {
                 position: absolute;
                 bottom: 0;
@@ -371,7 +370,7 @@ const updateCurrentSlide = (data) => {
                 padding: 4px;
                 opacity: 0;
                 transition: opacity 0.3s ease;
-                
+
                 .thumbnail-title {
                     font-size: 0.7rem;
                     font-weight: 600;
@@ -382,7 +381,7 @@ const updateCurrentSlide = (data) => {
                     text-overflow: ellipsis;
                 }
             }
-            
+
             &:hover .thumbnail-overlay {
                 opacity: 1;
             }
@@ -391,76 +390,76 @@ const updateCurrentSlide = (data) => {
 }
 
 @media screen and (max-width: 1200px) {
-    #main-container {
+    #main-container-servicos {
         padding: 60px 30px;
     }
-    
+
     #servicos {
         gap: 30px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #main-container {
+    #main-container-servicos {
         padding: 50px 20px;
     }
-    
+
     .section-header h2 {
         font-size: 2rem;
     }
-    
+
     .section-header .section-description {
         font-size: 1rem;
     }
-    
+
     #servicos {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .services-list {
         padding: 30px 25px !important;
-        
+
         h3 {
             font-size: 1.8rem;
         }
-        
+
         .service-grid {
             grid-template-columns: repeat(2, 1fr) !important;
             gap: 20px !important;
         }
-        
+
         .service-item {
             padding: 20px 15px;
-            
+
             .service-icon {
                 font-size: 2rem;
             }
-            
+
             h4 {
                 font-size: 1.1rem;
             }
-            
+
             p {
                 font-size: 0.9rem;
             }
         }
     }
-    
+
     .gallery-section {
         h3 {
             font-size: 1.8rem;
         }
     }
-    
+
     .carousel__item {
         height: 280px !important;
     }
-    
+
     .carousel-thumbnails {
         grid-template-columns: repeat(3, 1fr) !important;
         gap: 10px !important;
-        
+
         .thumbnail-item {
             height: 60px !important;
         }
@@ -468,68 +467,68 @@ const updateCurrentSlide = (data) => {
 }
 
 @media screen and (max-width: 480px) {
-    #main-container {
+    #main-container-servicos {
         padding: 40px 15px;
     }
-    
+
     .section-header h2 {
         font-size: 1.8rem;
     }
-    
+
     .services-list {
         padding: 25px 20px !important;
-        
+
         h3 {
             font-size: 1.6rem;
         }
-        
+
         .service-grid {
             grid-template-columns: 1fr !important;
             gap: 15px !important;
         }
-        
+
         .service-item {
             padding: 18px 15px;
-            
+
             .service-icon {
                 font-size: 1.8rem;
             }
-            
+
             h4 {
                 font-size: 1rem;
             }
-            
+
             p {
                 font-size: 0.85rem;
             }
         }
     }
-    
+
     .gallery-section {
         h3 {
             font-size: 1.6rem;
         }
     }
-    
+
     .carousel__item {
         height: 250px !important;
     }
-    
+
     .carousel-thumbnails {
         display: none !important;
     }
-    
+
     .overlay-content {
         padding: 15px;
-        
+
         h4 {
             font-size: 1.2rem;
         }
-        
+
         p {
             font-size: 0.9rem;
         }
-        
+
         .view-details-btn {
             padding: 8px 16px;
             font-size: 0.85rem;
@@ -541,7 +540,7 @@ const updateCurrentSlide = (data) => {
     .section-header h2 {
         font-size: 1.6rem;
     }
-    
+
     .carousel__item {
         height: 220px !important;
     }

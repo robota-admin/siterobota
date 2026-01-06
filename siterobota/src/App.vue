@@ -53,7 +53,7 @@ main > *:not(:last-child):after {
 
 /* Espaçamento específico para seções */
 main > * {
-  margin-bottom: 80px;
+  margin-bottom: 40px; /* 80px */
 }
 
 main > *:last-child {
@@ -63,9 +63,9 @@ main > *:last-child {
 /* Responsividade */
 @media screen and (max-width: 1200px) {
   main > * {
-    margin-bottom: 60px;
+    margin-bottom: 35px; /* 60px */
   }
-  
+
   main > *:not(:last-child):after {
     bottom: -30px;
     width: 80px;
@@ -74,9 +74,9 @@ main > *:last-child {
 
 @media screen and (max-width: 768px) {
   main > * {
-    margin-bottom: 50px;
+    margin-bottom: 30px; /* 50px */
   }
-  
+
   main > *:not(:last-child):after {
     bottom: -25px;
     width: 60px;
@@ -86,9 +86,9 @@ main > *:last-child {
 
 @media screen and (max-width: 480px) {
   main > * {
-    margin-bottom: 40px;
+    margin-bottom: 25px; /* 40px */
   }
-  
+
   main > *:not(:last-child):after {
     bottom: -20px;
     width: 50px;
@@ -98,9 +98,9 @@ main > *:last-child {
 
 @media screen and (max-width: 360px) {
   main > * {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
-  
+
   main > *:not(:last-child):after {
     width: 40px;
   }

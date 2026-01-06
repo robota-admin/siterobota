@@ -2,17 +2,17 @@
 </script>
 
 <template>
-    <div id="main-container">
+    <div id="main-container-sobre">
         <div class="section-header">
             <h2>QUEM SOMOS</h2>
             <div class="accent-line"></div>
         </div>
-        
+
         <div class="hero-section">
             <h3 class="hero-title">ROBOTA - Equipe de Robótica da UFSC</h3>
             <p class="hero-description">
-                A ROBOTA é uma equipe de robótica móvel vinculada à Universidade Federal de Santa Catarina (UFSC) 
-                que atua há mais de duas décadas no desenvolvimento de projetos competitivos. Desde 2002, o grupo 
+                A ROBOTA é uma equipe de robótica móvel vinculada à Universidade Federal de Santa Catarina (UFSC)
+                que atua há mais de duas décadas no desenvolvimento de projetos competitivos. Desde 2002, o grupo
                 se dedica à criação e aperfeiçoamento de robôs autônomos para diversas modalidades de competição.
             </p>
         </div>
@@ -21,18 +21,18 @@
             <div class="mission-card">
                 <h4>Missão e Objetivos</h4>
                 <p>
-                    A ROBOTA combina conhecimento acadêmico com aplicação prática, proporcionando aos estudantes 
-                    da UFSC uma experiência única no desenvolvimento de sistemas robóticos. O grupo contribui para 
-                    o avanço da robótica nacional através da participação em competições e do desenvolvimento de 
+                    A ROBOTA combina conhecimento acadêmico com aplicação prática, proporcionando aos estudantes
+                    da UFSC uma experiência única no desenvolvimento de sistemas robóticos. O grupo contribui para
+                    o avanço da robótica nacional através da participação em competições e do desenvolvimento de
                     tecnologias inovadoras.
                 </p>
                 <p>
-                    A equipe representa não apenas um projeto de extensão universitária, mas também um centro de 
-                    formação de profissionais qualificados na área de robótica e automação, preparando os estudantes 
+                    A equipe representa não apenas um projeto de extensão universitária, mas também um centro de
+                    formação de profissionais qualificados na área de robótica e automação, preparando os estudantes
                     para os desafios tecnológicos do futuro.
                 </p>
             </div>
-            
+
             <div class="stats-section">
                 <div class="stats-grid">
                     <div class="stat-card">
@@ -67,7 +67,7 @@
 </template>
 
 <style scoped>
-#main-container {
+#main-container-sobre {
     max-width: 1200px;
     margin: 0 auto;
     padding: 80px 20px;
@@ -231,111 +231,111 @@
 
 /* Responsividade */
 @media screen and (max-width: 1200px) {
-    #main-container {
+    #main-container-sobre {
         padding: 60px 30px;
     }
-    
+
     .content-grid {
         gap: 30px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #main-container {
+    #main-container-sobre {
         padding: 50px 20px;
     }
-    
+
     .section-header h2 {
         font-size: 2.2rem;
     }
-    
+
     .hero-title {
         font-size: 1.8rem;
     }
-    
+
     .hero-description {
         font-size: 1.05rem;
     }
-    
+
     .content-grid {
         grid-template-columns: 1fr;
         gap: 25px;
     }
-    
+
     .hero-section {
         padding: 40px 25px;
         margin-bottom: 50px;
     }
-    
+
     .mission-card {
         padding: 35px 25px;
     }
-    
+
     .mission-card h4 {
         font-size: 1.6rem;
     }
-    
+
     .mission-card p {
         font-size: 1rem;
     }
-    
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
-    
+
     .stat-card {
         padding: 25px 15px;
     }
-    
+
     .stat-card h4 {
         font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    #main-container {
+    #main-container-sobre {
         padding: 40px 15px;
     }
-    
+
     .section-header h2 {
         font-size: 1.8rem;
     }
-    
+
     .hero-title {
         font-size: 1.5rem;
     }
-    
+
     .hero-description {
         font-size: 1rem;
     }
-    
+
     .hero-section {
         padding: 30px 20px;
         margin-bottom: 40px;
     }
-    
+
     .mission-card {
         padding: 25px 20px;
     }
-    
+
     .mission-card h4 {
         font-size: 1.4rem;
     }
-    
+
     .stats-grid {
         grid-template-columns: 1fr;
         gap: 12px;
     }
-    
+
     .stat-card {
         padding: 20px 15px;
     }
-    
+
     .stat-icon {
         font-size: 2rem;
     }
-    
+
     .stat-card h4 {
         font-size: 1.8rem;
     }
@@ -345,11 +345,11 @@
     .section-header h2 {
         font-size: 1.6rem;
     }
-    
+
     .hero-title {
         font-size: 1.3rem;
     }
-    
+
     .mission-card h4 {
         font-size: 1.2rem;
     }

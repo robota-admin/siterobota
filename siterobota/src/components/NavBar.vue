@@ -17,18 +17,18 @@ const toggleMenu = () => {
                     <h1>ROBOTA</h1>
                 </a>
             </div>
-            
+
             <div class="nav-content">
                 <div id="nav-elements" :class="{ 'menu-open': isMenuOpen }">
                     <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#sobre">Sobre nós</a></li>
-                        <li><a href="#equipes">Equipes</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#main-container-sobre">Sobre nós</a></li>
+                        <li><a href="#main-container-equipes">Equipes</a></li>
+                        <li><a href="#main-container-servicos">Serviços</a></li>
+                        <li><a href="#main-container-contato">Contato</a></li>
                     </ul>
                 </div>
-                
+
                 <div id="nav-redes-sociais">
                     <a href="https://www.instagram.com/robota.ufsc/" class="social-link" title="Instagram" target="_blank" rel="noopener noreferrer">
                         <img src="../assets/icons8-instagram.svg" alt="Instagram">
@@ -43,7 +43,7 @@ const toggleMenu = () => {
                         <img src="../assets/icons8-twitter.svg" alt="Twitter">
                     </a>
                 </div>
-                
+
                 <button class="menu-toggle" @click="toggleMenu" :class="{ 'active': isMenuOpen }">
                     <span></span>
                     <span></span>
@@ -83,17 +83,17 @@ const toggleMenu = () => {
         text-decoration: none;
         color: inherit;
         transition: all 0.3s ease;
-        
+
         &:hover {
             transform: translateY(-2px);
         }
-        
+
         img {
             width: 50px;
             height: 50px;
             transition: all 0.3s ease;
         }
-        
+
         h1 {
             font-size: 1.8rem;
             font-weight: 700;
@@ -103,7 +103,7 @@ const toggleMenu = () => {
             -webkit-text-fill-color: transparent;
             margin: 0;
         }
-        
+
         &:hover img {
             transform: rotate(5deg) scale(1.1);
         }
@@ -123,7 +123,7 @@ const toggleMenu = () => {
         gap: 30px;
         margin: 0;
         padding: 0;
-        
+
         li {
             a {
                 text-decoration: none;
@@ -134,14 +134,14 @@ const toggleMenu = () => {
                 border-radius: 25px;
                 transition: all 0.3s ease;
                 position: relative;
-                
+
                 &:hover {
                     background: linear-gradient(135deg, var(--main-purple), var(--main-orange));
                     color: white;
                     transform: translateY(-2px);
                     box-shadow: 0 5px 15px rgba(102, 51, 153, 0.3);
                 }
-                
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -153,7 +153,7 @@ const toggleMenu = () => {
                     transition: all 0.3s ease;
                     transform: translateX(-50%);
                 }
-                
+
                 &:hover::after {
                     width: 100%;
                 }
@@ -165,7 +165,7 @@ const toggleMenu = () => {
 #nav-redes-sociais {
     display: flex;
     gap: 12px;
-    
+
     .social-link {
         display: flex;
         align-items: center;
@@ -175,19 +175,19 @@ const toggleMenu = () => {
         border-radius: 50%;
         background: rgba(102, 51, 153, 0.1);
         transition: all 0.3s ease;
-        
+
         img {
             width: 20px;
             height: 20px;
             opacity: 0.7;
             transition: all 0.3s ease;
         }
-        
+
         &:hover {
             background: linear-gradient(135deg, var(--main-purple), var(--main-orange));
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(102, 51, 153, 0.3);
-            
+
             img {
                 opacity: 1;
                 filter: brightness(0) invert(1);
@@ -203,7 +203,7 @@ const toggleMenu = () => {
     border: none;
     cursor: pointer;
     padding: 5px;
-    
+
     span {
         width: 25px;
         height: 3px;
@@ -212,15 +212,15 @@ const toggleMenu = () => {
         transition: all 0.3s ease;
         border-radius: 2px;
     }
-    
+
     &.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
-    
+
     &.active span:nth-child(2) {
         opacity: 0;
     }
-    
+
     &.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
@@ -231,31 +231,31 @@ const toggleMenu = () => {
         padding: 0 15px;
         height: 70px;
     }
-    
+
     #nav-logo .logo-link {
         h1 {
             font-size: 1.4rem;
         }
-        
+
         img {
             width: 40px;
             height: 40px;
         }
     }
-    
+
     .nav-content {
         gap: 15px;
     }
-    
+
     .menu-toggle {
         display: flex;
         order: 2;
     }
-    
+
     #nav-redes-sociais {
-        order: 1;
+        display: none;
     }
-    
+
     #nav-elements {
         position: absolute;
         top: 100%;
@@ -268,27 +268,27 @@ const toggleMenu = () => {
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
-        
+
         &.menu-open {
             transform: translateY(0);
             opacity: 1;
             visibility: visible;
         }
-        
+
         ul {
             flex-direction: column;
             gap: 0;
             padding: 20px;
-            
+
             li {
                 width: 100%;
-                
+
                 a {
                     display: block;
                     padding: 15px 20px;
                     border-radius: 8px;
                     text-align: center;
-                    
+
                     &::after {
                         display: none;
                     }
@@ -296,14 +296,14 @@ const toggleMenu = () => {
             }
         }
     }
-    
+
     #nav-redes-sociais {
         gap: 8px;
-        
+
         .social-link {
             width: 35px;
             height: 35px;
-            
+
             img {
                 width: 18px;
                 height: 18px;
@@ -317,32 +317,32 @@ const toggleMenu = () => {
         padding: 0 10px;
         height: 65px;
     }
-    
+
     #nav-logo .logo-link {
         h1 {
             font-size: 1.2rem;
         }
-        
+
         img {
             width: 35px;
             height: 35px;
         }
     }
-    
+
     #nav-redes-sociais {
         gap: 6px;
-        
+
         .social-link {
             width: 32px;
             height: 32px;
-            
+
             img {
                 width: 16px;
                 height: 16px;
             }
         }
     }
-    
+
     .menu-toggle {
         span {
             width: 22px;
