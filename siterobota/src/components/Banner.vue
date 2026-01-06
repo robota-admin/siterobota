@@ -3,7 +3,7 @@
 
 <template>
     <div id="main-container">
-        <div id="banner">
+        <div id="banner" style="background: url('public/banner_robota.JPG') no-repeat center center / cover;">
             <div class="banner-overlay"></div>
             <div id="heading-container">
                 <div id="text-container">
@@ -33,7 +33,6 @@
 #banner {
     height: 70vh;
     min-height: 600px;
-    background: url("public/banner_robota.JPG") no-repeat center center / cover;
     position: relative;
     display: flex;
     align-items: center;

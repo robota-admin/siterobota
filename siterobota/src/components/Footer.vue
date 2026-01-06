@@ -39,7 +39,7 @@
                     <h4>Redes Sociais</h4>
                     <div class="social-links">
                         <a href="https://www.instagram.com/robota.ufsc/" class="social-link" target="_blank" rel="noopener noreferrer">
-                            <img src="../assets/icons8-instagram.svg" alt="Instagram">
+                            <img src="../assets/icon-instagram-svgrepo.svg" alt="Instagram">
                         </a>
                         <a href="#" class="social-link">
                             <img src="../assets/icons8-facebook.svg" alt="Facebook">
